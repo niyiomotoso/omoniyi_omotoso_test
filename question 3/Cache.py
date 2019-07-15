@@ -1,13 +1,18 @@
 import datetime
-
+import uuid
 class Cache:
-    def __init__(self):
-        self.cacheMaximumSize = 4
+    def __init__(self, maxSize):
+        self.cacheMaximumSize = maxSize
+        #initialize a cache memory store
         self.cacheMemory = {}
 
-    
-    def update_cache(self, key, ip):
-        if (key not in self.cacheMemory and len(self.cacheMemory) >= self.cacheMaximumSize ):
+    def cache_size(self):
+        return len(self.cacheMemory) 
+
+    def update_cache(self, ip):
+        #generating time-based random id for entry key
+        key = uuid.uuid4()
+        if (key not in self.cacheMemory and self.cache_size() >= self.cacheMaximumSize ):
             self.delete_cache_lru()
         new_entry = {"ip": ip, "system_log_time" : datetime.datetime.now()}
         self.cacheMemory[key] = new_entry

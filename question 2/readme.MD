@@ -1,8 +1,10 @@
  Laguage: Python
 
  Function: Library
- 
+
  Name: basicnumcompare
+
+ 
 
  
 A python library that takes 2 digits as input and then checks if one is greater, equal or less than the other. Example output; 5 is greater than 1
