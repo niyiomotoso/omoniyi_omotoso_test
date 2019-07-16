@@ -1,6 +1,6 @@
 import datetime
 import uuid
-class Cache:
+class LRUCache:
     def __init__(self, maxSize):
         self.cacheMaximumSize = maxSize
         #initialize a cache memory store

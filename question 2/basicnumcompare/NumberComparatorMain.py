@@ -8,22 +8,6 @@ from NumberComparator import NumberComparator
 #     except ValueError:
 #         print("Oops! Please enter valid numbers")
 
-        
-
-# def numberComparator(first_digit_input, second_digit_input):
-#     first_digit = float( first_digit_input)
-#     second_digit = float( second_digit_input)
-
-#     if(first_digit > second_digit):
-#         return (str(first_digit_input)+ " is greater than "+ str(second_digit_input))
-        
-#     elif(first_digit == second_digit):
-#         return (str(first_digit_input)+ " is equal to "+ str(second_digit_input))
-        
-#     else:
-#         return (str(first_digit_input)+ " is less than "+ str(second_digit_input))
-  
-
 if __name__ == "__main__":
     try:
        
