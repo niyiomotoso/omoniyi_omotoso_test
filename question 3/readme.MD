@@ -2,7 +2,7 @@ Language: Python
 
 Program: Cache LRU Library, A Geo Distributed LRU (Least Recently Used) cache with time expiration.
 
-Impelementation
+Implementation
 
 - The program was implemented in CacheMain for a Cache with Max Size of 15 but can be changed depending on use case.
 
